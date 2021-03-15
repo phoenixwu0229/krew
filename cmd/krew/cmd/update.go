@@ -123,9 +123,9 @@ func loadPlugins(indexes []indexoperations.Index) []pluginEntry {
 
 func ensureIndexes(_ *cobra.Command, _ []string) error {
 	klog.V(3).Infof("Will check if there are any indexes added.")
-	if err := ensureDefaultIndexIfNoneExist(); err != nil {
-		return err
-	}
+	//if err := ensureDefaultIndexIfNoneExist(); err != nil {
+	//	return err
+	//}
 	return ensureIndexesUpdated()
 }
 
